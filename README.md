@@ -57,6 +57,4 @@ Assertions:
 
 Ensuring that the parking lot correctly handles concurrent parking without any exceptions or data corruption.
 
-Verifying that the number of parked cars is equal to the number of threads started.
-
 Confirming that all parked cars have unique car IDs.
