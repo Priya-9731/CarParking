@@ -31,3 +31,25 @@ This ER diagram assumes a one-to-many relationship between a car and parking, me
 JUNIT Testcase 
 
 Additionally I have written Junit test cases using mockito - all the test cases are added in ParkingControllerTest class
+
+Incorporated review comments by adding test case for concurrent parking. 
+
+Please find test case testConcurrentParking with explanation for more details.
+
+
+Test Case: Concurrent Parking
+This test case ensures that the parking lot can handle multiple cars being parked simultaneously.
+
+Scenario
+Setup:
+
+Initialising a ParkingLot instance.
+Concurrent Parking:
+
+Creating a thread pool with multiple threads 
+Each thread attempts to park a car in the parking lot concurrently.
+Assertions:
+
+Ensuring that the parking lot correctly handles concurrent parking without any exceptions or data corruption.
+Verifying that the number of parked cars is equal to the number of threads started.
+Confirming that all parked cars have unique car IDs.
